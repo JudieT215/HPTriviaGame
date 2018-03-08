@@ -7,6 +7,8 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
     <style></style>
 
@@ -35,7 +37,7 @@
     </div>
 </div>
 </div>
-<div class="container">
+<div class="container questions">
 <div class="jumbotron jumbotron-fluid">
         <div class="row">
         <div class="col d-flex justify-content-center">
@@ -43,13 +45,12 @@
         </div>
         </div>
         <div class="row d-flex justify-content-start">
-            <div class="form-check" name="test">
-            <p id="Q1">What was the former name of Lord Voldemort?(Full name, please) </p>
-            <p>
-             <input type="radio" name="question1" value="Tom Marvolo Riddle"> Tom Marvolo Riddle<br> 
-             <input type="radio" name="question1" value="John"> John <br>
-            <input type="radio" name="question1" value="Fluffy"> Fluffy <br>
-            </p>
+            <form id="test" action="" class="form-check">
+            <fieldset>
+            <p>What was the former name of Lord Voldemort?(Full name, please) </p>
+            <input type="radio" name="question1" value="1"/>Tom Marvolo Riddle<br>
+            <input type="radio" name="question1" value="0"/> John <br/>
+           <input type="radio" name="question1" value="0"/> Fluffy <br/>
            
           
              
@@ -57,52 +58,49 @@
                     <span id="Q2">What is the name of the Birthday present Hagrid gave to Harry in the 1st book? </span>
                 </p>
                 
-            
-                <input type="radio" name="question2" value= "Dudley Dursley">Dudley Dursley <br>
-                <input type="radio" name="question2" value= "Hedwig">Hedwig <br>
-                <input type="radio" name="question2" value= "Hogwarts">Hogwarts <br>
+                <input type="radio" name="question2" value= "0"/>Dudley Dursley <br>
+                <input type="radio" name="question2" value= "1"/>Hedwig <br>
+                <input type="radio" name="question2" value= "0"/>Hogwarts <br>
     
-            
-                <p>
-                <span id="Q3">What is the name of the alley filled with witches and wizards and (if you can't apparate or haven't got any floo powder handy)
-                            can only be entered through the Leaky Cauldron? </span>
+                <p>What is the name of the alley filled with witches and wizards and (if you can't apparate or haven't got any floo powder handy)
+                            can only be entered through the Leaky Cauldron? 
                 </p>
                         
                 
-                <input type="radio" name="question3" value= "Peter Pettigrew">Peter Pettigrew <br>
-                <input type="radio" name="question3" value= "Lily Evans">Lily Evans <br>
-                <input type="radio" name="question3" value= "Diagon Alley">Diagon Alley <br>
+                <input type="radio" name="question3" value= "0"/>Peter Pettigrew <br>
+                <input type="radio" name="question3" value= "0"/>Lily Evans <br>
+                <input type="radio" name="question3" value= "1"/>Diagon Alley <br>
                  
                 
-                <p>
-                <span id="Q4">What is the name of the platform the Hogwarts Express leaves from? (numerical) </span>
+                <p> What is the name of the platform the Hogwarts Express leaves from? (numerical)
                 </p>
                         
                      
-                <input type="radio" name="question4" value= "9 3/4">9 3/4 <br>
-                <input type="radio" name="question4" value= "4">4 <br>
-                <input type="radio" name="question4" value= "14"> 14 <br>
+                <input type="radio" name="question4" value= "1/">9 3/4 <br>
+                <input type="radio" name="question4" value= "0"/>4 <br>
+                <input type="radio" name="question4" value= "0"/> 14 <br>
+
                 
+                <button type="submit" value="Submit" id="subBtn">Submit</button>
+                
+            </fieldset>
+            </form>
+
+             <div class="col d-flex justify-content-center" id="number_correct">
+             results
             </div>
          </div>
          
                 
                 
         </div>
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary btn-lg" id="subBtn"> Submit</button>
-            </div>
-        </div>
+  
         <div class="row">
                 <div class="col d-flex justify-content-center" id="after_submit">
                 </div>
                     
         </div>
-        <div class="row">
-                <div class="col d-flex justify-content-center" id="number_correct">
-                </div>
-                
+    
         </div>
     </div>
 </div>

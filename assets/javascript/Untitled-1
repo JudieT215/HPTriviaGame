@@ -1,0 +1,22 @@
+// var submitChoices = function () {
+// $("#subBtn").on("click", function () {console.log("submit");
+//     var question1 = question1.test.value;
+//     var question2 = question2.test.value;
+//     var question3 = question3.test.value;
+//     var question4 = question4.test.value;
+
+//     if (question1 == "Tom Marvolo Riddle" ){
+//         correct++;
+//     }
+//     if (question2 == "Hedwig") {
+//         correct++;
+//     }
+//     if (question3 == "Diagon Alley") {
+//         correct++;
+//     }
+//     if (question4 == "9 3/4") {
+//         correct++;
+
+}
+
+});

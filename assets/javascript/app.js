@@ -2,6 +2,8 @@
 $(document).ready(function () {
 
 
+
+
 var correct = 0;
 
 //global var
@@ -13,18 +15,21 @@ var intervalId;
 //prevents the clock from being sped up unnecessarily
 var clockRunning = false;
 
+//hide that questions
 
+$(".questions").hide();
 //functions
 
-//function to show the Question and Answers
-var startGame = function (){
 //click start button things happen
 $("#startBtn").on("click", function () {
+    console.log("clicked");
+    $(".questions").show();
     if (!clockRunning) {
         intervalId = setInterval(decrement, 1000);
-        clockRunning = true;
-    }
-});
+        clockRunning = true
+    
+    };
+
 
 function decrement() {
 
@@ -32,46 +37,44 @@ function decrement() {
         timer--;
         //  Show the number in the #show-number tag.
         $("#timer").html("<h2>" + timer + "</h2>");
-        if (timer === 0) {
+        
+        if (timer === 0) { 
         //  ...run the stop function.
         stop();
-    }
+        alert("you lost!")
 };
 
- function stop() {
+        //  ...run the stop function.
+
+function stop() {
 //  Clears our intervalId
 //  We just pass the name of the interval
 //  to the clearInterval function.
 clearInterval(intervalId);
+};
+
+//trying to get the question graded then change the DOM to show the results by creating a var for each question and assigning the value once the submit button is clicked
+
+$("#subBtn").on("click", function () {
+    $(".questions").show();
+
+   
+    document.getElementById("test") =function(){
+    var question1 =parseInt(document.querySelector('input[name="question1"]:checked').value);
+    var question2 = parseInt(document.querySelector('input[name="question2"]:checked').value);
+    var question3 = parseInt(document.querySelector('input[name="question3"]:checked').value);
+    var question4 = parseInt(document.querySelector('input[name="question4"]:checked').value);
+
+    result = question1 + question2 + question3 + question4;
+
+    $("number_correct").innerHTML = result;
+    
+    // return false; 
 }
 
-startGame();
 
-
-
-// var submitChoices = function () {
-// $("#subBtn").on("click", function () {console.log("submit");
-//     var question1 = question1.test.value;
-//     var question2 = question2.test.value;
-//     var question3 = question3.test.value;
-//     var question4 = question4.test.value;
-
-//     if (question1 == "Tom Marvolo Riddle" ){
-//         correct++;
-//     }
-//     if (question2 == "Hedwig") {
-//         correct++;
-//     }
-//     if (question3 == "Diagon Alley") {
-//         correct++;
-//     }
-//     if (question4 == "9 3/4") {
-//         correct++;
-//  }
-// });
-}
+};
+:
 });
-
-
-
+});
 
