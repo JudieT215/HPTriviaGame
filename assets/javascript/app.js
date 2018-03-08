@@ -1,9 +1,6 @@
 
 $(document).ready(function () {
 
-
-
-
 var correct = 0;
 
 //global var
@@ -56,10 +53,9 @@ clearInterval(intervalId);
 //trying to get the question graded then change the DOM to show the results by creating a var for each question and assigning the value once the submit button is clicked
 
  $("#subBtn").on("click", function () {
+     console.log("I got clicked!");
     $(".questions").show();
-
    
-    document.getElementById("test") = function(){
     var question1 =parseInt(document.querySelector('input[name="question1"]:checked').value);
     var question2 = parseInt(document.querySelector('input[name="question2"]:checked').value);
     var question3 = parseInt(document.querySelector('input[name="question3"]:checked').value);
@@ -67,10 +63,12 @@ clearInterval(intervalId);
 
     result = question1 + question2 + question3 + question4;
 
-    $("number_correct").innerHTML = result;
+    stop(); 
+
+    $("#number_correct").text("Number of answers correct: " + result);
     
     // return false; 
-}
+
 
 
 });
