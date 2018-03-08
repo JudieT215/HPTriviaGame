@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Harry Potter Trivia </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style></style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+    <div class="col jumbotron jumbotron-fluid">
+        <div class="row justify-content-center">
+        <h1>Harry Potter Trivia!</h1>
+        </div>
+
+        <div class="row">
+                <div class = "col d-flex justify-content-center">
+                <img src="assets/image/HarryPotter.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+        </div>
+                <div class="row">
+                
+                    <div class="col d-flex justify-content-center algin-center">
+                        <button type="button" class="btn btn-primary btn-lg" id="startBtn"> Start </button>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="jumbotron jumbotron-fluid">
+        <div class="row">
+        <div class="col d-flex justify-content-center">
+                        <p>Time: <span id="timer">30</span></p>
+        </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+            <div class="form-check" name="test">
+            <p id="Q1">What was the former name of Lord Voldemort?(Full name, please) </p>
+            <p>
+             <input type="radio" name="question1" value="Tom Marvolo Riddle"> Tom Marvolo Riddle<br> 
+             <input type="radio" name="question1" value="John"> John <br>
+            <input type="radio" name="question1" value="Fluffy"> Fluffy <br>
+            </p>
+           
+          
+             
+                <p>
+                    <span id="Q2">What is the name of the Birthday present Hagrid gave to Harry in the 1st book? </span>
+                </p>
+                
+            
+                <input type="radio" name="question2" value= "Dudley Dursley">Dudley Dursley <br>
+                <input type="radio" name="question2" value= "Hedwig">Hedwig <br>
+                <input type="radio" name="question2" value= "Hogwarts">Hogwarts <br>
+    
+            
+                <p>
+                <span id="Q3">What is the name of the alley filled with witches and wizards and (if you can't apparate or haven't got any floo powder handy)
+                            can only be entered through the Leaky Cauldron? </span>
+                </p>
+                        
+                
+                <input type="radio" name="question3" value= "Peter Pettigrew">Peter Pettigrew <br>
+                <input type="radio" name="question3" value= "Lily Evans">Lily Evans <br>
+                <input type="radio" name="question3" value= "Diagon Alley">Diagon Alley <br>
+                 
+                
+                <p>
+                <span id="Q4">What is the name of the platform the Hogwarts Express leaves from? (numerical) </span>
+                </p>
+                        
+                     
+                <input type="radio" name="question4" value= "9 3/4">9 3/4 <br>
+                <input type="radio" name="question4" value= "4">4 <br>
+                <input type="radio" name="question4" value= "14"> 14 <br>
+                
+            </div>
+         </div>
+         
+                
+                
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary btn-lg" id="subBtn"> Submit</button>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col d-flex justify-content-center" id="after_submit">
+                </div>
+                    
+        </div>
+        <div class="row">
+                <div class="col d-flex justify-content-center" id="number_correct">
+                </div>
+                
+        </div>
+    </div>
+</div>
+
+
+    <!-- JAVASCRIPT  -->
+    <!-- ========================================= -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js">
+
+
+    </script>
+</body>
+
+</html>
+
+</html>
